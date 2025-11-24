@@ -42,7 +42,7 @@ document.getElementById("addTaskBtn").addEventListener("click", function () {
     console.log(`la tarea es: ${nuevaTarea.textContent}`);
 
     //Limpiar la entrada después de agregar
-    //document.getElementById("newTask").value = "";
+    document.getElementById("newTask").value = "";
 
     //Botón de eliminado
     let btn_eliminar = document.createElement("button");
