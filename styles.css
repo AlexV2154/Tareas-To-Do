@@ -12,12 +12,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
-  
 }
 
 header {
-  background: #1B384D;
+  background: #1b384d;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -46,7 +44,7 @@ main {
 .task-input button {
   padding: 0.5rem 1rem;
   border: none;
-  background: #1B384D;
+  background: #1b384d;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -124,14 +122,13 @@ footer {
   transition: 0.2s ease-in-out;
 }
 
-.btn-eliminar:hover{
+.btn-eliminar:hover {
   transform: scale(1.1);
 }
 
 .btn-eliminar:active {
   background-color: #862116;
   box-shadow: 1px solid #000000;
-  
 }
 
 .borradoTotal {
@@ -144,10 +141,9 @@ footer {
   font-size: 17px;
   transition: 0.3s ease;
 }
-.borradoTotal:hover{
+.borradoTotal:hover {
   background-color: #096931;
   transform: scale(1.1);
-  
 }
 
 .modalBorrar {
@@ -169,7 +165,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-
 .btnConfirmar {
   background-color: #27ae60;
   color: #ffffff;
@@ -180,7 +175,7 @@ footer {
   margin-right: 5px;
   cursor: pointer;
 }
-.btnConfirmar:hover{
+.btnConfirmar:hover {
   background-color: #096931;
 }
 .btnCancelar {
@@ -193,6 +188,47 @@ footer {
   margin-left: 5px;
   cursor: pointer;
 }
-.btnCancelar:hover{
+.btnCancelar:hover {
   background-color: #5a0900;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .task-input {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .task-list li {
+    width: 100%;
+    gap: 10px;
+
+    padding: 0.5rem;
+
+    justify-content: space-between;
+  }
+
+  .task-list li button {
+    width: 70px;
+  }
+
+  .borradoTotal {
+    width: 100%;
+    height: 45px;
+  }
+
+  .modalBorrar {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
 }
