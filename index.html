@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Lista de Tareas</h1>
+  </header>
+
+  <main>
+    <!-- Sección para agregar tareas -->
+    <section class="task-input">
+      <input type="text" id="newTask" placeholder="Escribe una nueva tarea...">
+      <button id="addTaskBtn">Agregar</button>
+    </section>
+
+    <!-- Lista de tareas -->
+    <section class="task-list">
+      <ul id="taskContainer">
+        <!-- Aquí se insertarán las tareas dinámicamente con JS -->
+      </ul>
+      <button class="borradoTotal" id="abrirModal">Borrar todo</button>
+    </section>
+
+  </main>
+  <!--Modal de borrado total-->
+  <section class="modalBorrar" id="modalBorrar">
+
+    <h3>¿Está seguro de borrarTodo?</h3>
+    <div class="opciones-modal">
+      <button class="btnConfirmar" id="borrarTodo">Confirmar</button>
+      <button class="btnCancelar" id="cancelar-modal">Cancelar</button>
+    </div>
+  </section>
+  <footer>
+    <p>Proyecto To-Do App en JavaScript</p>
+  </footer>
+
+  <!-- Tu script JS irá aquí -->
+  <script src="script.js"></script>
+</body>
+
+</html>

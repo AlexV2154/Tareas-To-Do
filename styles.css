@@ -1,0 +1,198 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/img/scool-eu.jpg);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  
+}
+
+header {
+  background: #1B384D;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.task-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-input button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #1B384D;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background: #021627;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-list ul {
+  list-style: none;
+}
+
+.task-list li {
+  background: white;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list .delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.task-list .delete-btn:hover {
+  background: #c0392b;
+}
+
+.task-list .complete-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.task-list .complete-btn:hover {
+  background: #27ae60;
+}
+
+footer {
+  background: #ececec;
+  text-align: center;
+  padding: 1rem;
+}
+
+.btn-eliminar {
+  background-color: #c0392b;
+  color: #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-eliminar:hover{
+  transform: scale(1.1);
+}
+
+.btn-eliminar:active {
+  background-color: #862116;
+  box-shadow: 1px solid #000000;
+  
+}
+
+.borradoTotal {
+  background-color: #27ae60;
+  color: rgb(255, 255, 255);
+  display: none;
+  width: 120px;
+  height: 41px;
+  padding: 5px 10px;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+.borradoTotal:hover{
+  background-color: #096931;
+  transform: scale(1.1);
+  
+}
+
+.modalBorrar {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 130px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px#000000;
+  z-index: 100000;
+  position: fixed;
+  gap: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.btnConfirmar {
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 37px;
+  border-radius: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.btnConfirmar:hover{
+  background-color: #096931;
+}
+.btnCancelar {
+  background-color: #bd2312;
+  border: none;
+  color: #ffffff;
+  width: 80px;
+  height: 37px;
+  border-radius: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.btnCancelar:hover{
+  background-color: #5a0900;
+}
